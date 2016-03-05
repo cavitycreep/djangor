@@ -5,7 +5,7 @@ Feel free to use this as a base template for your own projects, or to simply stu
 
 You will need to create your React components in the ./static/dev/js/**/, where the asteriks are the name of your component.
 
-In your component's file, you'll create two files:
+In the newly created component folder, you'll create two files:
 
 1. client.js
 2. _component.js
