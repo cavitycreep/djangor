@@ -22,7 +22,7 @@ module.exports = function(grunt) {
                     {
                         "expand": true,
                         "cwd": "static/dev/js/",
-                        "src": ["**/component.js"],
+                        "src": ["**/component.js", "**/client.js"],
                         "dest": "static/dev/js/",
                         "ext": ".babel.js"
                     },
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
                         "cwd": "static/dev/js/",
                         "src": ["**/component.js"],
                         "dest": "static/dev/build/js/",
-                        "ext": ".babel.js"
+                        "ext": ".js"
                     }
                 ]
             }
@@ -40,7 +40,7 @@ module.exports = function(grunt) {
         webpack: {
             build: {
                 entry: {
-                    "example": path.resolve("static/dev/js/example/client.js")
+                    "example": path.resolve("static/dev/js/example/client.babel.js")
                 },
                 output: {
                     path: "static/dev/build/js",
@@ -51,7 +51,9 @@ module.exports = function(grunt) {
 
         concat: {
             css: {
-                src: ['static/dev/css/**/*.css'],
+                src: [
+                    'static/dev/css/example/*.css'
+                ],
                 dest: 'static/dev/css/main.css'
             }
         },
@@ -71,7 +73,7 @@ module.exports = function(grunt) {
         uglify: {
             js: {
                 files: {
-                    "static/dev/build/js/example/client.min.js": ['static/dev/build/js/example/client.js']
+                    "static/dev/build/js/example/client.js": ['static/dev/build/js/example/client.js']
                 }
             }
         },
