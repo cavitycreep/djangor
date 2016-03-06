@@ -1,0 +1,25 @@
+{
+  "name": "static",
+  "authors": [
+    "cavitycreep <cgraffrun@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "^0.14.7",
+    "jquery": "^2.2.1"
+  }
+}
