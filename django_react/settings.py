@@ -3,7 +3,6 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
 
-
 DEBUG = True
 ALLOWED_HOSTS = ['*',]
 
@@ -67,8 +66,6 @@ WSGI_APPLICATION = 'django_react.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        
     }
 }
 
