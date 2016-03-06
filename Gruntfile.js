@@ -22,14 +22,14 @@ module.exports = function(grunt) {
                     {
                         "expand": true,
                         "cwd": "static/dev/js/",
-                        "src": ["**/_component.js"],
+                        "src": ["**/component.js"],
                         "dest": "static/dev/js/",
                         "ext": ".babel.js"
                     },
                     {
                         "expand": true,
                         "cwd": "static/dev/js/",
-                        "src": ["**/_component.js"],
+                        "src": ["**/component.js"],
                         "dest": "static/dev/build/js/",
                         "ext": ".babel.js"
                     }
@@ -43,8 +43,8 @@ module.exports = function(grunt) {
                     "example": path.resolve("static/dev/js/example/client.js")
                 },
                 output: {
-                    path: "static/dev/js",
-                    filename: "[name].js"
+                    path: "static/dev/build/js",
+                    filename: "[name]/client.js"
                 }
             }
         },
@@ -71,7 +71,7 @@ module.exports = function(grunt) {
         uglify: {
             js: {
                 files: {
-                    "static/dev/build/js/example.min.js": ['static/dev/js/example.js']
+                    "static/dev/build/js/example/client.min.js": ['static/dev/build/js/example/client.js']
                 }
             }
         },

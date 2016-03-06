@@ -1,4 +1,4 @@
-var ExampleComponent = require('./_component.babel.js');
+var ExampleComponent = require('./component.babel.js');
 var React = require('react');
 var ReactDOM = require('react-dom');
 ReactDOM.render(
