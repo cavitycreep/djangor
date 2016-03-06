@@ -54,7 +54,7 @@ module.exports = function(grunt) {
                 src: [
                     'static/dev/css/example/*.css'
                 ],
-                dest: 'static/dev/css/main.css'
+                dest: 'static/dev/build/css/main.css'
             }
         },
 
@@ -65,7 +65,7 @@ module.exports = function(grunt) {
             },
             target: {
                 files: {
-                    'static/dev/build/css/main.min.css': ['static/dev/css/main.css']
+                    'static/dev/build/css/main.css': ['static/dev/build/css/main.css']
                 }
             }
         },
@@ -81,11 +81,11 @@ module.exports = function(grunt) {
         watch : {
             css: {
                 files: ['static/dev/css/**/*.css'],
-                tasks: ['concat:css']
+                tasks: ['default']
             },
             js: {
                 files: ['static/dev/js/**/*.js'],
-                tasks: ['concat:js', 'babel']
+                tasks: ['default']
             }
         }
     });

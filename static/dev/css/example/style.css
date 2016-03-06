@@ -1,3 +1,22 @@
-h1p {
-    background-color: red;
+html, body
+{
+    width: 100%;
+}
+
+h1 {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+img {
+    margin: 20px 0px;
+}
+
+div#content{
+    margin: 20px;
+}
+
+form.form-horizontal div.form-group {
+    margin-left: 0px;
+    margin-right: 0px;
 }
